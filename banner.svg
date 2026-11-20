@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420">
+  <defs>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+    <radialGradient id="g1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2"><stop offset="0" stop-color="#b06cff"/><stop offset="1" stop-color="#b06cff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g3"><stop offset="0" stop-color="#39c6ff"/><stop offset="1" stop-color="#39c6ff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#e6dcff"/><stop offset="1" stop-color="#a8e6ff"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#07060b" stop-opacity=".2"/><stop offset=".55" stop-color="#07060b" stop-opacity=".1"/><stop offset="1" stop-color="#07060b" stop-opacity=".75"/></linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#fff" opacity=".05"/></pattern>
+    <clipPath id="r"><rect width="1280" height="420" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="1280" height="420" fill="#07060b"/>
+    <g filter="url(#blur)" opacity=".9">
+      <circle cx="260" cy="120" r="300" fill="url(#g1)">
+        <animate attributeName="cx" values="260;360;260" dur="18s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="620" cy="330" r="280" fill="url(#g2)">
+        <animate attributeName="cy" values="330;250;330" dur="22s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1060" cy="90" r="260" fill="url(#g3)" opacity=".7">
+        <animate attributeName="cx" values="1060;960;1060" dur="26s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect width="1280" height="420" fill="url(#dots)"/>
+    <rect width="1280" height="420" fill="url(#fade)"/>
+
+    <g transform="translate(96 0)" font-family="'Segoe UI Variable Display','Segoe UI',Inter,system-ui,-apple-system,sans-serif">
+      <rect x="0" y="112" width="186" height="34" rx="17" fill="#7c5cff" fill-opacity=".22" stroke="#b06cff" stroke-opacity=".5"/>
+      <g transform="translate(18 120)" fill="none" stroke="#e9e2ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="8" width="14" height="10" rx="2"/><path d="M4 8V5a4 4 0 0 1 8 0v3"/>
+      </g>
+      <text x="44" y="135" font-size="14" font-weight="700" letter-spacing="2.2" fill="#e9e2ff">PRIVATE BUILD</text>
+      <text x="0" y="230" font-size="72" font-weight="800" letter-spacing="-2" fill="url(#title)">Deus Ex Aeternae</text>
+      <text x="2" y="284" font-size="26" font-weight="500" fill="#ece8fa" fill-opacity=".72">The private edition. Invitation only.</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1279" height="419" rx="27.5" fill="none" stroke="#fff" stroke-opacity=".08"/>
+</svg>
