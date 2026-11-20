@@ -17,11 +17,9 @@
 This repository holds only the installers. They're deliberately tiny: there's no app inside, just a
 key-shaped hole for your token.
 
-| | |
-|---|---|
-| **1 · Install** | Download the installer for your device from the [latest release](https://github.com/AureliusGilchrist/seaserver-installer/releases/latest) and run it. |
-| **2 · Paste your token** | On first launch you're asked for your access token (it starts with `github_pat_`). |
-| **3 · Done** | The app downloads itself from the private repository and opens. From then on it keeps itself up to date — new versions arrive within about a minute of being made. |
+1. **Install.** Download the installer for your device from the [latest release](https://github.com/AureliusGilchrist/seaserver-installer/releases/latest) and run it.
+2. **Paste your token.** On first launch you're asked for your access token (it starts with `github_pat_`).
+3. **Done.** The app downloads itself from the private repository and opens. From then on it keeps itself up to date: new versions arrive within about a minute of being made.
 
 ## Your token
 
